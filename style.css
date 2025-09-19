@@ -533,6 +533,11 @@ html body .text-primary {
         margin-right: auto;
     }
     
+    /* Override Bootstrap margin classes trên mobile */
+    .text-center .btn-lg.me-2 {
+        margin-right: auto;
+    }
+    
     /* Button spacing */
     .text-center .btn-lg + .btn-lg {
         margin-top: 10px;
