@@ -1,34 +1,34 @@
 {
   "id": 1,
-  "title": "Da Nang Tour 3 days 2 nights: Colors of Central Vietnam",
-  "region": "Central Vietnam",
+  "title": "Tur Da Nang 3 hari 2 malam: Warna-warni Vietnam Tengah",
+  "region": "Vietnam Tengah",
   "days": 3,
-  "description": "Explore the captivating beauty of the coastal city of Da Nang, with its fine white sand beaches, unique bridges, and rich culinary scene.",
+  "description": "Jelajahi keindahan menawan kota pesisir Da Nang, dengan pantai pasir putih halus, jembatan-jembatan unik, dan kekayaan kuliner.",
   "image": "tours/data/tour-danang.jpg",
   "itinerary": [
-    "Day 1: Visit Son Tra Peninsula, Linh Ung Pagoda and watch the Dragon Bridge fire and water show on weekends.",
-    "Day 2: Experience Ba Na Hills, explore the famous Golden Bridge, the ancient French Village and Le Jardin D'Amour flower garden.",
-    "Day 3: Shop for local specialties, enjoy the beauty of Marble Mountains before ending the trip."
+    "Hari 1: Kunjungi Semenanjung Son Tra, Pagoda Linh Ung dan saksikan pertunjukan api dan air Jembatan Naga di akhir pekan.",
+    "Hari 2: Nikmati Ba Na Hills, jelajahi Jembatan Emas yang terkenal, Desa Prancis kuno dan taman bunga Le Jardin D'Amour.",
+    "Hari 3: Berbelanja oleh-oleh khas, nikmati keindahan Pegunungan Marmer sebelum mengakhiri perjalanan."
   ],
   "includes": [
-    "Air-conditioned tourist vehicle",
-    "Vietnamese-speaking guide",
-    "Entrance tickets to tourist sites",
-    "Meals as per program",
-    "3-4 star hotel"
+    "Kendaraan wisata ber-AC",
+    "Pemandu berbahasa Vietnam",
+    "Tiket masuk objek wisata",
+    "Makan sesuai program",
+    "Hotel bintang 3-4"
   ],
   "excludes": [
-    "Round-trip flight tickets",
-    "Personal expenses",
-    "Alcoholic beverages",
-    "Travel insurance",
-    "Guide tips"
+    "Tiket pesawat pulang-pergi",
+    "Pengeluaran pribadi",
+    "Minuman beralkohol",
+    "Asuransi perjalanan",
+    "Tips pemandu"
   ],
   "terms": [
-    "Book the tour 7 days in advance for the best price",
-    "Cancel tour 3 days in advance with no fee",
-    "Children under 2 years old free, 2-11 years old charged 75% of adult price",
-    "Bring valid ID/Passport",
-    "Company reserves the right to change itinerary according to weather conditions"
+    "Pesan tur 7 hari sebelumnya untuk harga terbaik",
+    "Batalkan tur 3 hari sebelumnya tanpa biaya",
+    "Anak di bawah 2 tahun gratis, 2-11 tahun dikenakan 75% dari harga dewasa",
+    "Bawa KTP/Paspor yang berlaku",
+    "Perusahaan berhak mengubah jadwal sesuai kondisi cuaca"
   ]
 }

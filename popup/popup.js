@@ -43,8 +43,8 @@ class PopupManager {
                 <div class="popup-container">
                     <div class="popup-header">
                         <button class="popup-close" onclick="popupManager.closePopup()">&times;</button>
-                        <h2 class="popup-title">Welcome to VN To You Asia!</h2>
-                        <p class="popup-subtitle">Your Trusted Vietnam Travel Partner</p>
+                        <h2 class="popup-title">Selamat Datang di VN To You Asia!</h2>
+                        <p class="popup-subtitle">Mitra Perjalanan Vietnam Terpercaya Anda</p>
                     </div>
                     
                     <div class="popup-body">
@@ -53,32 +53,32 @@ class PopupManager {
                         </div>
                         
                         <div class="popup-message">
-                            <h3>Discover Amazing Vietnam Tours</h3>
-                            <p>We provide high-quality, customized tour packages for businesses and travelers. From Northern mountains to Southern beaches, explore Vietnam with our expert guides!</p>
+                            <h3>Temukan Tur Vietnam yang Menakjubkan</h3>
+                            <p>Kami menyediakan paket tur berkualitas tinggi dan disesuaikan untuk bisnis dan wisatawan. Dari pegunungan Utara hingga pantai Selatan, jelajahi Vietnam bersama pemandu ahli kami!</p>
                         </div>
                         
                         <div class="popup-contacts">
                             <a href="mailto:SALES@VNTOYOU.NET" class="popup-contact-btn">
-                                📧 Email Us
+                                📧 Email Kami
                             </a>
                             <a href="https://wa.me/84904596505" class="popup-contact-btn" target="_blank">
                                 💬 WhatsApp
                             </a>
                             <a href="tel:+84904596505" class="popup-contact-btn">
-                                📱 Call Now
+                                📱 Telepon Sekarang
                             </a>
                         </div>
                         
                         <div class="popup-offer">
-                            <h4>🎁 Special Offer for New Customers</h4>
-                            <p>Contact us today and get a <strong>free consultation</strong> for your Vietnam travel plans!</p>
+                            <h4>🎁 Penawaran Khusus untuk Pelanggan Baru</h4>
+                            <p>Hubungi kami hari ini dan dapatkan <strong>konsultasi gratis</strong> untuk rencana perjalanan Vietnam Anda!</p>
                         </div>
                     </div>
                     
                     <div class="popup-footer">
                         <label class="dont-show-again">
                             <input type="checkbox" id="dont-show-checkbox"> 
-                            Don't show this again for a week
+                            Jangan tampilkan lagi selama seminggu
                         </label>
                     </div>
                 </div>
@@ -177,7 +177,7 @@ class PopupManager {
     
     trackEvent(eventName, eventData = null) {
         // Simple event tracking - can be integrated with analytics
-        console.log('Popup Event:', eventName, eventData);
+        console.log('Event Popup:', eventName, eventData);
         
         // Example: Send to Google Analytics
         if (typeof gtag !== 'undefined') {

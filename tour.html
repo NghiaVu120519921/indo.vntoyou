@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIET NAM TO YOU TOURISM COMPANY LIMITED - Tours</title>
-    <link rel="icon" type="image/png" href="images/VN TO YOU LOGO.png">
+    <title>VIET NAM TO YOU TOURISM COMPANY LIMITED - Tur</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -19,10 +18,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Introduction</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="tour.html">Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Perkenalan</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tour.html">Tur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Berita</a></li>
                 </ul>
             </div>
         </div>
@@ -30,8 +29,8 @@
 
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1>Travel Tours</h1>
-            <p>Explore amazing destinations with tours specially designed for businesses.</p>
+            <h1>Tur Perjalanan</h1>
+            <p>Jelajahi destinasi menakjubkan dengan tur yang dirancang khusus untuk bisnis.</p>
         </div>
     </header>
 
@@ -39,21 +38,21 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-6">
-                    <label for="region" class="form-label">Select Region:</label>
+                    <label for="region" class="form-label">Pilih Wilayah:</label>
                     <select class="form-select" id="region">
-                        <option value="all">All Vietnam</option>
-                        <option value="bac">Northern Vietnam</option>
-                        <option value="trung">Central Vietnam</option>
-                        <option value="nam">Southern Vietnam</option>
+                        <option value="all">Seluruh Vietnam</option>
+                        <option value="bac">Vietnam Utara</option>
+                        <option value="trung">Vietnam Tengah</option>
+                        <option value="nam">Vietnam Selatan</option>
                     </select>
                 </div>
                 <div class="col-md-6">
-                    <label for="days" class="form-label">Number of Days:</label>
+                    <label for="days" class="form-label">Jumlah Hari:</label>
                     <select class="form-select" id="days">
-                        <option value="all">All</option>
-                        <option value="1-3">1-3 Days</option>
-                        <option value="4-7">4-7 Days</option>
-                        <option value="8+">8+ Days</option>
+                        <option value="all">Semua</option>
+                        <option value="1-3">1-3 Hari</option>
+                        <option value="4-7">4-7 Hari</option>
+                        <option value="8+">8+ Hari</option>
                     </select>
                 </div>
             </div>
@@ -67,14 +66,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2025 VIET NAM TO YOU TOURISM COMPANY LIMITED. All rights reserved.</p>
+                    <p>&copy; 2025 VIET NAM TO YOU TOURISM COMPANY LIMITED. Semua hak cipta dilindungi.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="contact-footer">
-                        <p class="mb-2"><strong>Contact us:</strong></p>
+                        <p class="mb-2"><strong>Hubungi kami:</strong></p>
                         <p class="mb-1">
                             <i class="fas fa-map-marker-alt me-2"></i>
-                            Address: No. 5TT1 Alley 537 Bat Khoi Str, Long Bien Dist, Hanoi, Vietnam
+                            Alamat: No. 5TT1 Gang 537 Jl. Bat Khoi, Distrik Long Bien, Hanoi, Vietnam
                         </p>
                         <p class="mb-1">
                             <a href="mailto:SALES@VNTOYOU.NET" class="text-white text-decoration-none">
@@ -114,7 +113,7 @@
                 allTours = await response.json();
                 displayTours(allTours);
             } catch (error) {
-                console.error('Lỗi load tours:', error);
+                console.error('Error saat memuat tur:', error);
             }
         }
 
@@ -131,8 +130,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">${tour.title}</h5>
                                 <p class="card-text">${tour.description}</p>
-                                <p class="text-muted">${tour.region} | ${tour.days} Days</p>
-                                <a href="tours/details/tour-detail.html?id=${tour.id}" class="btn btn-primary">View Details</a>
+                                <p class="text-muted">${tour.region} | ${tour.days} Hari</p>
+                                <a href="tours/details/tour-detail.html?id=${tour.id}" class="btn btn-primary">Lihat Detail</a>
                             </div>
                         </div>
                     </div>
@@ -151,9 +150,9 @@
             // Filter by region
             if (regionFilter !== 'all') {
                 const regionMap = {
-                    'bac': 'Northern Vietnam',
-                    'trung': 'Central Vietnam', 
-                    'nam': 'Southern Vietnam'
+                    'bac': 'Vietnam Utara',
+                    'trung': 'Vietnam Tengah', 
+                    'nam': 'Vietnam Selatan'
                 };
                 filteredTours = filteredTours.filter(tour => 
                     tour.region === regionMap[regionFilter]

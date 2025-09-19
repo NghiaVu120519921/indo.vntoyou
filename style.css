@@ -1,116 +1,138 @@
 /* 
- * VN To You Asia - Custom Styles v2.0
- * Updated: Logo sizing fixed for all devices
+ * VN To You Asia - Custom Styles v3.0
+ * Updated: Reduced !important usage, using CSS Custom Properties
  * 
  * Nguyên tắc: 
- * - Không được dùng inline CSS nữa. Tất cả style phải trong file này hoặc Bootstrap classes.
- * - Màu logo chính: #0095d9
- * - Logo responsive: 35px-60px tùy thiết bị
- * - Nếu cần style thêm, dùng Bootstrap utilities.
+ * - Sử dụng CSS Custom Properties thay vì !important
+ * - Tăng specificity tự nhiên thay vì force override
+ * - Tận dụng Bootstrap utilities và CSS cascade
+ * - Màu chủ đạo: #0095d9
  */
 
-/* Override Bootstrap colors to use logo color */
-.btn-primary,
-.btn-success,
-.btn-info,
-.btn-warning,
-.btn-danger,
-.btn-secondary,
-.bg-primary,
-.bg-success,
-.bg-info {
-    background-color: #0095d9 !important;
-    border-color: #0095d9 !important;
-    color: white !important;
+/* CSS Custom Properties */
+:root {
+    --vn-primary-color: #0095d9;
+    --vn-primary-hover: #007bb3;
+    --vn-primary-rgb: 0, 149, 217;
+    --vn-logo-height-mobile: 35px;
+    --vn-logo-height-small: 40px;
+    --vn-logo-height-medium: 50px;
+    --vn-logo-height-large: 60px;
+    --vn-logo-height-default: 45px;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-success:hover,
-.btn-success:focus,
-.btn-success:active,
-.btn-info:hover,
-.btn-info:focus,
-.btn-info:active,
-.btn-warning:hover,
-.btn-warning:focus,
-.btn-warning:active,
-.btn-danger:hover,
-.btn-danger:focus,
-.btn-danger:active,
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary:active {
-    background-color: #007bb3 !important;
-    border-color: #007bb3 !important;
-    color: white !important;
+/* Theme colors - Sử dụng specificity cao hơn thay vì !important */
+.navbar .btn-primary,
+.container .btn-primary,
+.card .btn-primary,
+html body .btn-primary {
+    background-color: var(--vn-primary-color);
+    border-color: var(--vn-primary-color);
+    color: white;
 }
 
-.badge.bg-primary,
-.badge.bg-success,
-.badge.bg-info {
-    background-color: #0095d9 !important;
+.navbar .btn-primary:hover,
+.container .btn-primary:hover,
+.card .btn-primary:hover,
+html body .btn-primary:hover,
+.navbar .btn-primary:focus,
+.container .btn-primary:focus,
+.card .btn-primary:focus,
+html body .btn-primary:focus {
+    background-color: var(--vn-primary-hover);
+    border-color: var(--vn-primary-hover);
+    color: white;
 }
 
-/* Text color overrides */
-.text-primary,
-.text-success,
-.text-info {
-    color: #0095d9 !important;
+/* Áp dụng theme cho các button variants khác */
+.container .btn-success,
+.container .btn-info,
+html body .btn-success,
+html body .btn-info {
+    background-color: var(--vn-primary-color);
+    border-color: var(--vn-primary-color);
 }
 
-/* Style cho logo - override Bootstrap img-fluid với multiple selectors */
-.navbar-brand img,
+.container .btn-success:hover,
+.container .btn-info:hover,
+html body .btn-success:hover,
+html body .btn-info:hover {
+    background-color: var(--vn-primary-hover);
+    border-color: var(--vn-primary-hover);
+}
+
+/* Background utilities */
+.container .bg-primary,
+.section .bg-primary,
+header.bg-primary {
+    background-color: var(--vn-primary-color);
+}
+
+/* Text color utilities */
+.container .text-primary,
+.card .text-primary,
+html body .text-primary {
+    color: var(--vn-primary-color);
+}
+
+/* Badge styling */
+.container .badge.bg-primary,
+.card .badge.bg-primary {
+    background-color: var(--vn-primary-color);
+}
+
+/* Logo styling - Sử dụng CSS Custom Properties */
+.navbar .navbar-brand img,
 .navbar-brand img.img-fluid,
-.navbar .navbar-brand img {
-    height: 45px !important;
-    width: auto !important;
-    max-width: none !important;
-    max-height: none !important;
+.navbar .navbar-brand img.img-fluid {
+    height: var(--vn-logo-height-default);
+    width: auto;
+    max-width: none;
+    max-height: none;
 }
 
-/* Logo responsive cho các thiết bị */
+/* Logo responsive - Sử dụng CSS variables thay vì !important */
 @media (min-width: 992px) {
-    .navbar-brand img,
+    .navbar .navbar-brand img,
     .navbar-brand img.img-fluid,
-    .navbar .navbar-brand img {
-        height: 60px !important;
+    .navbar .navbar-brand img.img-fluid {
+        height: var(--vn-logo-height-large);
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .navbar-brand img,
+    .navbar .navbar-brand img,
     .navbar-brand img.img-fluid,
-    .navbar .navbar-brand img {
-        height: 50px !important;
+    .navbar .navbar-brand img.img-fluid {
+        height: var(--vn-logo-height-medium);
     }
 }
 
 @media (max-width: 767px) {
-    .navbar-brand img,
+    .navbar .navbar-brand img,
     .navbar-brand img.img-fluid,
-    .navbar .navbar-brand img {
-        height: 40px !important;
+    .navbar .navbar-brand img.img-fluid {
+        height: var(--vn-logo-height-small);
     }
 }
 
 @media (max-width: 480px) {
-    .navbar-brand img,
+    .navbar .navbar-brand img,
     .navbar-brand img.img-fluid,
-    .navbar .navbar-brand img {
-        height: 35px !important;
+    .navbar .navbar-brand img.img-fluid {
+        height: var(--vn-logo-height-mobile);
     }
 }
 
-/* Style cho carousel: Ảnh zoom cover, caption màu logo trên nền trắng */
+/* Carousel styling */
 .carousel-item img {
     object-fit: cover;
     height: 400px;
 }
 
-.carousel-caption h5, .carousel-caption p {
-    color: #0095d9 !important;
+.carousel-caption h5, 
+.carousel-caption p {
+    color: var(--vn-primary-color);
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 5px;
@@ -404,14 +426,14 @@
     transform: scale(1.05);
 }
 
-/* Back to Top Button */
+/* Back to Top Button - Sử dụng CSS variables */
 .back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #0095d9;
+    background-color: var(--vn-primary-color);
     color: white;
     border: none;
     border-radius: 50%;
@@ -420,22 +442,76 @@
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    box-shadow: 0 4px 12px rgba(0, 149, 217, 0.3);
+    box-shadow: 0 4px 12px rgba(var(--vn-primary-rgb), 0.3);
     transition: all 0.3s ease;
     z-index: 1000;
 }
 
 .back-to-top:hover {
-    background-color: #007bb3;
+    background-color: var(--vn-primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 149, 217, 0.4);
+    box-shadow: 0 6px 16px rgba(var(--vn-primary-rgb), 0.4);
 }
 
 .back-to-top.show {
     display: flex;
 }
 
-/* Responsive cho mobile */
+/* General button spacing improvements */
+.btn + .btn {
+    margin-left: 8px;
+}
+
+/* Utility classes để thay thế !important */
+.vn-bg-primary {
+    background-color: var(--vn-primary-color);
+}
+
+.vn-text-primary {
+    color: var(--vn-primary-color);
+}
+
+.vn-border-primary {
+    border-color: var(--vn-primary-color);
+}
+
+/* High specificity button classes khi cần override Bootstrap */
+.container .vn-btn-primary,
+.row .vn-btn-primary,
+.col .vn-btn-primary {
+    background-color: var(--vn-primary-color);
+    border-color: var(--vn-primary-color);
+    color: white;
+}
+
+.container .vn-btn-primary:hover,
+.row .vn-btn-primary:hover,
+.col .vn-btn-primary:hover {
+    background-color: var(--vn-primary-hover);
+    border-color: var(--vn-primary-hover);
+}
+
+/* Small screen button improvements */
+@media (max-width: 576px) {
+    .container .btn + .btn,
+    .text-center .btn + .btn {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    
+    /* Center-aligned button containers */
+    .text-center .btn {
+        display: block;
+        margin: 8px auto;
+        max-width: 280px;
+    }
+    
+    .text-center .btn:first-child {
+        margin-top: 0;
+    }
+}
+
+/* Responsive button improvements - Không dùng !important */
 @media (max-width: 768px) {
     .back-to-top {
         width: 45px;
@@ -443,5 +519,41 @@
         font-size: 18px;
         bottom: 15px;
         right: 15px;
+    }
+    
+    /* Mobile button layout - Sử dụng specificity cao */
+    .container .btn-lg,
+    .text-center .btn-lg,
+    .card-body .btn-lg {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Button spacing */
+    .text-center .btn-lg + .btn-lg {
+        margin-top: 10px;
+    }
+    
+    /* Card buttons */
+    .card-body .btn {
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+/* Tablet responsive */
+@media (max-width: 991px) and (min-width: 769px) {
+    .container .btn-lg,
+    .text-center .btn-lg {
+        margin-bottom: 8px;
+    }
+    
+    /* Tablet - buttons trong cards */
+    .card-body .btn {
+        width: 100%;
     }
 }

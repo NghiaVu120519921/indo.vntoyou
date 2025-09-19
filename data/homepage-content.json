@@ -1,17 +1,17 @@
 {
   "hero": {
-    "title": "Welcome to VIET NAM TO YOU TOURISM COMPANY LIMITED",
-    "subtitle": "We provide high-quality tour services for B2B businesses."
+    "title": "Selamat Datang di VIET NAM TO YOU TOURISM COMPANY LIMITED",
+    "subtitle": "Kami menyediakan layanan tur berkualitas tinggi untuk bisnis B2B."
   },
   "about": {
-    "title": "About VIET NAM TO YOU TOURISM COMPANY LIMITED",
-    "greeting": "Xin Chao! Welcome to Vntoyou Tour!",
-    "description": "We are the leading online local travel agency in Vietnam, offering all-inclusive tour packages to beautiful places across the country. Based in Ha Noi, our team of travel experts and tour guides is here to give the best service to every traveler.",
+    "title": "Tentang VIET NAM TO YOU TOURISM COMPANY LIMITED",
+    "greeting": "Xin Chao! Selamat Datang di Vntoyou Tour!",
+    "description": "Kami adalah agen perjalanan lokal online terkemuka di Vietnam, menawarkan paket tur lengkap ke tempat-tempat indah di seluruh negeri. Berkantor pusat di Ha Noi, tim ahli perjalanan dan pemandu wisata kami siap memberikan pelayanan terbaik untuk setiap wisatawan.",
     "stats": {
-      "year": "In 2025, we've made our team even stronger with over 150 travel experts and local resources like tour guides, drivers, hotels, and attractions.",
-      "pride": "We are proud of our skills and confident in planning the best tours for you. Our hard work shows in our 98% positive reviews from more than 1,000 travelers."
+      "year": "Pada tahun 2025, kami telah memperkuat tim dengan lebih dari 150 ahli perjalanan dan sumber daya lokal seperti pemandu wisata, driver, hotel, dan objek wisata.",
+      "pride": "Kami bangga dengan keahlian kami dan percaya diri dalam merencanakan tur terbaik untuk Anda. Kerja keras kami terbukti dalam 98% ulasan positif dari lebih dari 1.000 wisatawan."
     },
-    "services": "If you prefer private travel—whether you're a family, couple, adventurer, or just looking for a relaxing trip—we have tours to suit your needs. We offer private tour plans and can create a trip just for you. Let us help you plan your perfect vacation in Vietnam today"
+    "services": "Jika Anda lebih suka perjalanan pribadi—baik Anda keluarga, pasangan, petualang, atau hanya mencari perjalanan yang menyenangkan—kami memiliki tur yang sesuai dengan kebutuhan Anda. Kami menawarkan rencana tur pribadi dan dapat membuat perjalanan khusus untuk Anda. Biarkan kami membantu Anda merencanakan liburan sempurna di Vietnam hari ini"
   },
   "carousel": {
     "slides": [
@@ -43,55 +43,55 @@
     ]
   },
   "services": {
-    "title": "Our Key Services",
+    "title": "Layanan Utama Kami",
     "items": [
       {
-        "title": "Vietnam Land Tours",
-        "description": "Professionally organized tours across all three regions of Vietnam—North, Central, and South—highlighting the country's unique culture, landscapes, and landmarks."
+        "title": "Tur Darat Vietnam",
+        "description": "Tur yang diorganisir secara profesional di seluruh tiga wilayah Vietnam—Utara, Tengah, dan Selatan—menyoroti budaya, lanskap, dan landmark unik negara ini."
       },
       {
-        "title": "Private Group Tours",
-        "description": "Customized tours for groups of various sizes, from intimate groups of 6-8 up to larger groups of 200. Ideal for corporate outings, dealer incentive trips, company team-building activities, gala dinners, parties, and trips with family or friends."
+        "title": "Tur Grup Pribadi",
+        "description": "Tur yang disesuaikan untuk grup dengan berbagai ukuran, dari grup intim 6-8 orang hingga grup besar 200 orang. Ideal untuk acara korporat, perjalanan insentif dealer, kegiatan team building perusahaan, gala dinner, pesta, dan perjalanan bersama keluarga atau teman."
       },
       {
-        "title": "Specialized Travel Services",
-        "description": "Expertise in arranging educational and business visits, such as factory tours, school excursions, agricultural research visits, and trade trips focused on the apparel industry and other fields."
+        "title": "Layanan Perjalanan Khusus",
+        "description": "Keahlian dalam mengatur kunjungan pendidikan dan bisnis, seperti tur pabrik, kunjungan sekolah, kunjungan penelitian pertanian, dan perjalanan perdagangan yang berfokus pada industri pakaian dan bidang lainnya."
       },
       {
-        "title": "Vehicle Rental Services",
-        "description": "A broad selection of rental vehicles with experienced drivers, available in 7, 16, 29, 35, and 45-seat options, ensuring comfortable and convenient travel for groups of all sizes."
+        "title": "Layanan Sewa Kendaraan",
+        "description": "Pilihan kendaraan sewa yang luas dengan driver berpengalaman, tersedia dalam kapasitas 7, 16, 29, 35, dan 45 kursi, memastikan perjalanan yang nyaman dan mudah untuk grup dari semua ukuran."
       },
       {
-        "title": "Tour Guides and Interpreters",
-        "description": "Skilled and professional guides and interpreters are available to provide in-depth knowledge and assistance throughout the trip."
+        "title": "Pemandu Wisata dan Penerjemah",
+        "description": "Pemandu dan penerjemah yang terampil dan profesional tersedia untuk memberikan pengetahuan mendalam dan bantuan sepanjang perjalanan."
       },
       {
-        "title": "Luxury Leisure Activities",
-        "description": "Premium travel experiences, including golfing, playing at casinos, and exclusive shopping tours."
+        "title": "Aktivitas Rekreasi Mewah",
+        "description": "Pengalaman perjalanan premium, termasuk golf, bermain di kasino, dan tur belanja eksklusif."
       }
     ]
   },
   "navigation": {
-    "title": "Explore More",
-    "subtitle": "Learn more about our services and information",
+    "title": "Jelajahi Lebih Lanjut",
+    "subtitle": "Pelajari lebih lanjut tentang layanan dan informasi kami",
     "buttons": [
       {
-        "title": "View Tours",
-        "description": "Explore exciting travel tours",
+        "title": "Lihat Tur",
+        "description": "Jelajahi tur perjalanan yang menarik",
         "link": "tour.html",
         "class": "btn btn-primary btn-lg"
       },
       {
-        "title": "News",
-        "description": "Latest travel news updates",
+        "title": "Berita",
+        "description": "Update berita perjalanan terbaru",
         "link": "news.html", 
-        "class": "btn btn-info btn-lg"
+        "class": "btn btn-primary btn-lg"
       },
       {
-        "title": "Contact",
-        "description": "Contact us today",
+        "title": "Kontak",
+        "description": "Hubungi kami hari ini",
         "link": "contact.html",
-        "class": "btn btn-success btn-lg"
+        "class": "btn btn-primary btn-lg"
       }
     ]
   }

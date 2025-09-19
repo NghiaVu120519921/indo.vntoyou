@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIET NAM TO YOU TOURISM COMPANY LIMITED - Introduction</title>
-    <link rel="icon" type="image/png" href="images/VN TO YOU LOGO.png">
+    <title>VIET NAM TO YOU TOURISM COMPANY LIMITED - Perkenalan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="popup/popup.css">
@@ -18,10 +17,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Introduction</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tour.html">Tour</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Perkenalan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tour.html">Tur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Berita</a></li>
                 </ul>
             </div>
         </div>
@@ -41,11 +40,11 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Sebelumnya</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Selanjutnya</span>
                 </button>
             </div>
         </div>
@@ -73,14 +72,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2025 VIET NAM TO YOU TOURISM COMPANY LIMITED. All rights reserved.</p>
+                    <p>&copy; 2025 VIET NAM TO YOU TOURISM COMPANY LIMITED. Semua hak cipta dilindungi.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="contact-footer">
-                        <p class="mb-2"><strong>Contact us:</strong></p>
+                        <p class="mb-2"><strong>Hubungi kami:</strong></p>
                         <p class="mb-1">
                             <i class="fas fa-map-marker-alt me-2"></i>
-                            Address: No. 5TT1 Alley 537 Bat Khoi Str, Long Bien Dist, Hanoi, Vietnam
+                            Alamat: No. 5TT1 Gang 537 Jl. Bat Khoi, Distrik Long Bien, Hanoi, Vietnam
                         </p>
                         <p class="mb-1">
                             <a href="mailto:SALES@VNTOYOU.NET" class="text-white text-decoration-none">
@@ -221,24 +220,24 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="bg-light p-3 rounded mb-3">
-                                                <h5 class="text-success mb-2">Our Strength in 2025</h5>
+                                                <h5 class="text-primary mb-2">Kekuatan Kami di 2025</h5>
                                                 <p>${sanitizeHTML(about.stats.year)}</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="bg-light p-3 rounded mb-3">
-                                                <h5 class="text-success mb-2">Our Pride</h5>
+                                                <h5 class="text-primary mb-2">Kebanggaan Kami</h5>
                                                 <p>${sanitizeHTML(about.stats.pride)}</p>
                                             </div>
                                         </div>
                                     </div>
                                     
                                     <div class="mt-4">
-                                        <h5 class="text-primary mb-3">Our Services</h5>
+                                        <h5 class="text-primary mb-3">Layanan Kami</h5>
                                         <p class="mb-4">${sanitizeHTML(about.services)}</p>
                                         <div class="text-center">
-                                            <a href="tour.html" class="btn btn-primary btn-lg me-2">Explore Our Tours</a>
-                                            <a href="contact.html" class="btn btn-success btn-lg">Contact Us Today</a>
+                                            <a href="tour.html" class="btn btn-primary btn-lg me-2 mb-2">Jelajahi Tur Kami</a>
+                                            <a href="contact.html" class="btn btn-primary btn-lg mb-2">Hubungi Kami Hari Ini</a>
                                         </div>
                                     </div>
                                 </div>
@@ -292,13 +291,13 @@
             const heroSection = document.getElementById('hero-section');
             if (heroSection) {
                 heroSection.innerHTML = `
-                    <h1>Welcome to VIET NAM TO YOU TOURISM COMPANY LIMITED</h1>
-                    <p>We provide high-quality tour services for B2B businesses.</p>
+                    <h1>Selamat Datang di VIET NAM TO YOU TOURISM COMPANY LIMITED</h1>
+                    <p>Kami menyediakan layanan tur berkualitas tinggi untuk bisnis B2B.</p>
                 `;
             }
             
             // Add fallback for other sections as needed
-            console.warn('Using fallback content due to JSON loading error');
+            console.warn('Menggunakan konten cadangan karena error saat memuat JSON');
         }
 
         // Initialize homepage when DOM is loaded

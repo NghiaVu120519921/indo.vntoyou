@@ -1,10 +1,10 @@
 [
   {
     "id": "danang",
-    "title": "Da Nang Tour 3 days 2 nights: Colors of Central Vietnam",
-    "region": "Central Vietnam",
+    "title": "Tur Da Nang 3 hari 2 malam: Warna-warni Vietnam Tengah",
+    "region": "Vietnam Tengah",
     "days": 3,
-    "description": "Explore the captivating beauty of the coastal city of Da Nang, with its fine white sand beaches, unique bridges, and rich culinary scene.",
+    "description": "Jelajahi keindahan menawan kota pesisir Da Nang, dengan pantai pasir putih halus, jembatan-jembatan unik, dan kekayaan kuliner.",
     "image": "tours/data/tour-danang.jpg",
     "dataFile": "data/tour-danang.json"
   }

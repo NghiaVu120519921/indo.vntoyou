@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIET NAM TO YOU TOURISM COMPANY LIMITED - {{NEWS_TITLE}}</title>
-    <link rel="icon" type="image/png" href="../../images/VN TO YOU LOGO.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../style.css">
 </head>
@@ -17,10 +16,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../../index.html">Introduction</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../tour.html">Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../../news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Perkenalan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../tour.html">Tur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../news.html">Berita</a></li>
                 </ul>
             </div>
         </div>
@@ -28,8 +27,8 @@
 
     <header class="bg-primary text-white text-center py-5" id="news-header">
         <div class="container">
-            <h1>News Details</h1>
-            <p>Detailed information about news and events</p>
+            <h1>Detail Berita</h1>
+            <p>Informasi detail tentang berita dan acara</p>
         </div>
     </header>
 
@@ -37,9 +36,9 @@
         <div class="container">
             <div class="text-center">
                 <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                    <span class="visually-hidden">Memuat...</span>
                 </div>
-                <p>Loading news...</p>
+                <p>Memuat berita...</p>
             </div>
         </div>
     </section>
@@ -48,7 +47,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2025 VIET NAM TO YOU TOURISM COMPANY LIMITED. All rights reserved.</p>
+                    <p>&copy; 2025 VIET NAM TO YOU TOURISM COMPANY LIMITED. Semua hak cipta dilindungi.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="contact-footer">
@@ -121,7 +120,7 @@
 
             try {
                 console.log('Fetching news.json...');
-                const newsResponse = await fetch('/news/data/news.json');
+                const newsResponse = await fetch('../data/news.json');
                 console.log('News response status:', newsResponse.status);
                 
                 if (!newsResponse.ok) {
@@ -136,7 +135,7 @@
                 if (!newsItem) throw new Error(`Tin tức với ID "${newsId}" không tồn tại`);
 
                 console.log('Fetching news detail from:', newsItem.dataFile);
-                const detailResponse = await fetch('/news/' + newsItem.dataFile);
+                const detailResponse = await fetch('../' + newsItem.dataFile);
                 console.log('Detail response status:', detailResponse.status);
                 
                 if (!detailResponse.ok) {
@@ -223,7 +222,7 @@
                         <ul class="list-group list-group-flush">
                 `;
                 newsDetail.promotions.forEach(promotion => {
-                    contentHTML += `<li class="list-group-item text-success"><strong>${sanitizeHTML(promotion)}</strong></li>`;
+                    contentHTML += `<li class="list-group-item text-primary"><strong>${sanitizeHTML(promotion)}</strong></li>`;
                 });
                 contentHTML += '</ul></div>';
             }
@@ -277,7 +276,7 @@
                                 <a href="tel:${sanitizeHTML(newsDetail.contact.phone)}" class="btn btn-primary me-2">📱 ${sanitizeHTML(newsDetail.contact.phone)}</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="mailto:${sanitizeHTML(newsDetail.contact.email)}" class="btn btn-success">📧 ${sanitizeHTML(newsDetail.contact.email)}</a>
+                                <a href="mailto:${sanitizeHTML(newsDetail.contact.email)}" class="btn btn-primary">📧 ${sanitizeHTML(newsDetail.contact.email)}</a>
                             </div>
                         </div>
                     </div>
